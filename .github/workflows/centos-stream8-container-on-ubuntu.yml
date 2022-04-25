@@ -1,4 +1,10 @@
 jobs:
+  test_vm:
+    name: test_vm_stream_8
+    runs-on: stream-8 
+    steps:
+      - uses: "actions/checkout@v2"
+      - run: 'sudo ./runtests.sh'  
   test_0:
     name: test_0
     runs-on: ubuntu-latest
